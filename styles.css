@@ -62,15 +62,12 @@ section#home {
     background-color: #e0f7fa;
     padding: 8em 2em;
     text-align: center;
-    background: url('background.jpg') no-repeat center center;
     background-size: cover;
     color: #fff;
 }
 
-section#home .content {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 2em;
-    border-radius: 10px;
+section#about, section#services, section#contact {
+    padding-top: 6em;
 }
 
 section#about {
@@ -113,4 +110,10 @@ ul li {
     max-width: 800px;
     margin: 0 auto;
     padding: 1em;
+}
+
+.clipart {
+    max-width: 100px;
+    margin: 0 auto;
+    display: block;
 }
