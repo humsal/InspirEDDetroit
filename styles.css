@@ -10,20 +10,27 @@ body {
 header {
     background-color: #004080;
     color: white;
-    padding: 1em 0;
+    padding: 0.5em 1em;  /* Decreased height of the nav bar */
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
 header img#logo {
-    max-width: 150px;
+    max-width: 50px;  /* Decreased size of the logo */
     height: auto;
-    margin-left: 1em;
+}
+
+header .company-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
 }
 
 nav ul {
@@ -31,7 +38,6 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    margin-right: 1em;
 }
 
 nav ul li {
@@ -49,6 +55,7 @@ section {
     text-align: center;
     background-color: white;
     margin: 1em 0;
+    margin-top: 70px;  /* Ensure content appears below the nav bar */
 }
 
 section#home {
@@ -66,10 +73,6 @@ section#home .content {
     border-radius: 10px;
 }
 
-section#about, section#services, section#contact {
-    padding-top: 6em;
-}
-
 section#about {
     background-color: #fff3e0;
 }
@@ -80,6 +83,7 @@ section#services {
 
 section#contact {
     background-color: #fce4ec;
+    color: #333;  /* Change color to match the theme */
 }
 
 footer {
