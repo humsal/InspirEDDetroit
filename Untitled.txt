@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #004080;
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -45,6 +45,17 @@ section {
 
 section#home {
     background-color: #e0f7fa;
+    padding: 4em 2em;
+    text-align: center;
+    background: url('background.jpg') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+
+section#home .content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2em;
+    border-radius: 10px;
 }
 
 section#about {
@@ -60,11 +71,27 @@ section#contact {
 }
 
 footer {
-    background-color: #333;
+    background-color: #004080;
     color: white;
     text-align: center;
     padding: 1em;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 0.5em 0;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1em;
 }
