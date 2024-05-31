@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #004080;
+    background-color: rgba(0, 64, 128, 0.9);
     color: white;
     padding: 0.5em 1em;
     position: fixed;
@@ -29,6 +29,11 @@ header {
 header img#logo {
     max-width: 60px;
     height: auto;
+    transition: transform 0.3s;
+}
+
+header img#logo:hover {
+    transform: scale(1.1);
 }
 
 header .company-name {
@@ -54,18 +59,25 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
 }
 
 section {
     padding: 4em 2em;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     margin: 1em 0;
     margin-top: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 footer {
-    background-color: #004080;
+    background-color: rgba(0, 64, 128, 0.9);
     color: white;
     text-align: center;
     padding: 1em;
