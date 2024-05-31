@@ -5,23 +5,25 @@ body {
     box-sizing: border-box;
     background-color: #f4f4f4;
     color: #333;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 header {
     background-color: #004080;
     color: white;
-    padding: 0.5em 1em;  /* Adjusted height */
+    padding: 0.5em 1em;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 header img#logo {
-    max-width: 50px;  /* Decreased size of the logo */
+    max-width: 60px;  /* Slightly bigger size */
     height: auto;
 }
 
@@ -36,7 +38,7 @@ header .company-name {
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 20px;  /* Moved closer to the logo */
     display: flex;
 }
 
@@ -53,35 +55,9 @@ nav ul li a {
 section {
     padding: 4em 2em;
     text-align: center;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);  /* Slight transparency for readability */
     margin: 1em 0;
-    margin-top: 70px;  /* Ensure content appears below the nav bar */
-}
-
-section#home {
-    background: url('background.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 8em 2em;
-    text-align: center;
-    color: #fff;
-}
-
-section#home .content {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 2em;
-    border-radius: 10px;
-}
-
-section#about {
-    background-color: #fff3e0;
-}
-
-section#services, section#contact {
-    background-color: #e8f5e9;
-}
-
-section#contact {
-    color: #004080;  /* Changed color to match the theme */
+    margin-top: 100px;  /* Ensure content appears below the nav bar */
 }
 
 footer {
@@ -112,10 +88,4 @@ ul li {
     max-width: 800px;
     margin: 0 auto;
     padding: 1em;
-}
-
-.clipart {
-    max-width: 100px;
-    margin: 0 auto;
-    display: block;
 }
