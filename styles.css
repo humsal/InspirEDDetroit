@@ -10,7 +10,7 @@ body {
 header {
     background-color: #004080;
     color: white;
-    padding: 0.5em 1em;  /* Decreased height of the nav bar */
+    padding: 0.5em 1em;  /* Adjusted height */
     position: fixed;
     width: 100%;
     top: 0;
@@ -59,11 +59,10 @@ section {
 }
 
 section#home {
-    background-color: #e0f7fa;
-    padding: 8em 2em;
-    text-align: center;
     background: url('background.jpg') no-repeat center center;
     background-size: cover;
+    padding: 8em 2em;
+    text-align: center;
     color: #fff;
 }
 
@@ -77,13 +76,12 @@ section#about {
     background-color: #fff3e0;
 }
 
-section#services {
+section#services, section#contact {
     background-color: #e8f5e9;
 }
 
 section#contact {
-    background-color: #fce4ec;
-    color: #333;  /* Change color to match the theme */
+    color: #004080;  /* Changed color to match the theme */
 }
 
 footer {
@@ -116,3 +114,8 @@ ul li {
     padding: 1em;
 }
 
+.clipart {
+    max-width: 100px;
+    margin: 0 auto;
+    display: block;
+}
